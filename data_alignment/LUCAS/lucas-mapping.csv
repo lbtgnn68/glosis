@@ -3,18 +3,18 @@ property,description,unit,GLOSIS observation class,GLOSIS observed property,GLOS
 Point_ID,Unique identifier of the LUCAS survey point,8 digits number,id is part of URL of instance and appears in label,,,,
 ,,,,,,,
 Layer observations,,,,,,,
-Coarse,Coarse elements,%,glosis_lh:CoarseFragments,coarseFragmentsProperty,%,Suggestion?,
-Clay,Clay content,%,glosis_lh:Clay,ClayTotal (code list value),%,,
-Silt,Silt content,%,glosis_lh:Silt ,SiltSizeFractionTotal (code list value),GM per hectoGM,,gm/hg = %
-Sand,Sand content,%,glosis_lh:Sand,SandSizeFractionTotal (code list value),GM per hectoGM,,
-pH(CaCl2),pH measured in a CaCl2 solution,─,glosis_lh:PH,physioChemicalPropertyCode-pH (or pHProperty),PH,pHCaCl2,procedure CaCL2
-pH(H2O),pH measured in a suspension of soil in water,─,glosis_lh:PH,physioChemicalPropertyCode-pH (or pHProperty),PH,pHH2O,procedure H2O
-EC,Electrical conductivity,mS/m,glosis_lh:ElectricalConductivity,electricalConductivityProperty,DeciS-PER-M,Suggestion?,CONFLICT: mS is mili-Siemens. Divide by 100 to get dS/m.
-OC,Organic carbon content,g/kg,glosis_lh:CarbonOrganic,Carbon (C) - organic,GM per KiloGM,Suggestion?,
-CaCO3,Carbonates content,g/kg,glosis_lh:TotalCarbonateEquivalent,totalCarbonateEquivalentProperty,GM per KiloGM,Suggestion?,We didn’t use glosis_lh:CarbonatesContent as it has in ontology a result value codelist instead of g/kg
-P,Phosphorus content,mg/kg,glosis_lh:PhosphorusTotalElements,Phosphorus (P) - total,%,Suggestion?,Units now the same in GloSIS
-N,Total nitrogen content,g/kg,glosis_lh:NitrogenTotal,Nitrogen (N) - total,GM per KiloGM,Suggestion?,
-K,Extractable potassium content,mg/kg,glosis_lh:PotassiumExtractableElements,Potassium (K) - extractable,PERCENT,Suggestion?,Extractable elements in GloSIS currently expressed in percentages. Divide mg/kg by 10 000 to obtain %.
+Coarse,Coarse elements,%,glosis_lh:CoarseFragments,coarseFragmentsProperty,%,ISO 11464:2006,
+Clay,Clay content,%,glosis_lh:Clay,ClayTotal (code list value),%,ISO 11277:1998,
+Silt,Silt content,%,glosis_lh:Silt ,SiltSizeFractionTotal (code list value),GM per hectoGM,ISO 11277:1998,gm/hg = %
+Sand,Sand content,%,glosis_lh:Sand,SandSizeFractionTotal (code list value),GM per hectoGM,ISO 11277:1998,
+pH(CaCl2),pH measured in a CaCl2 solution,─,glosis_lh:PH,physioChemicalPropertyCode-pH (or pHProperty),PH,ISO 10390:1994,procedure pHCaCl2
+pH(H2O),pH measured in a suspension of soil in water,─,glosis_lh:PH,physioChemicalPropertyCode-pH (or pHProperty),PH,ISO 10390:1994,procedure pHH2O
+EC,Electrical conductivity,mS/m,glosis_lh:ElectricalConductivity,electricalConductivityProperty,DeciS-PER-M,ISO 11265:1994,CONFLICT: mS is mili-Siemens. Divide by 100 to get dS/m.
+OC,Organic carbon content,g/kg,glosis_lh:CarbonOrganic,Carbon (C) - organic,GM per KiloGM,ISO 10694:1995,
+CaCO3,Carbonates content,g/kg,glosis_lh:TotalCarbonateEquivalent,totalCarbonateEquivalentProperty,GM per KiloGM,ISO 10693:1994,We didn’t use glosis_lh:CarbonatesContent as it has in ontology a result value codelist instead of g/kg
+P,Phosphorus content,mg/kg,glosis_lh:PhosphorusTotalElements,Phosphorus (P) - total,%,ISO 11263:1994,Units now the same in GloSIS
+N,Total nitrogen content,g/kg,glosis_lh:NitrogenTotal,Nitrogen (N) - total,GM per KiloGM,ISO 11261:1995,
+K,Extractable potassium content,mg/kg,glosis_lh:PotassiumExtractableElements,Potassium (K) - extractable,PERCENT,USDA,2004,Extractable elements in GloSIS currently expressed in percentages. Divide mg/kg by 10 000 to obtain %.
 ,,,,,,,
 Site properties,,,,,,,
 LC1,LandCover class,,sosa:Observation,,,,
@@ -27,4 +27,4 @@ NUTS_2,NUTS 2 codes for the location where the sample was taken,,gn:parentADM2 (
 NUTS_3,NUTS 3 codes for the location where the sample was taken,,gn:parentADM3 (property),,,,
 ,,,,,,,
 Other in CSV,,,,,,,
-SOIL_STONES,Percentage of Stones in the sample as a class,,,,,,
+SOIL_STONES,Percentage of Stones in the sample as a class,,,,,ISO 11464:2006,
